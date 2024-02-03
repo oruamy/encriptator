@@ -39,7 +39,9 @@ function encriptar(entrada) {
         textoComprimento -= 1;
     }
   }
-  console.log(`Texto encriptado: ${textoCodificado}`);
+  alert(`Texto encriptado: ${textoCodificado}`);
 }
 
-//encriptar(prompt("Entre com o texto para ser criptogafado: "));
+function encriptador() {
+  encriptar(prompt("Entre com o texto para ser criptogafado: "));
+}

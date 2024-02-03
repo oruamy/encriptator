@@ -68,6 +68,10 @@ function descriptar(entrada) {
         textoComprimento -= 1;
     }
   }
-  console.log(`O texto decodificado é: ${textoDecodificado}`);
+  alert(`O texto decodificado é: ${textoDecodificado}`);
 }
-descriptar(prompt("Entre com o texto para ser descriptogafado: "));
+
+function descriptador() {
+  descriptar(prompt("Entre com o texto para ser descriptogafado: "));
+}
+
