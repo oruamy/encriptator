@@ -4,15 +4,20 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <main>
-      <button onclick="encriptador()">Encriptar</button>
-      <button onclick="descriptador()">Descriptar</button>
+      <h1>Encriptador / Descriptador</h1>
+      <form>
+        <textarea class="texto" rows="7" cols="150"></textarea>
+        <div class="buttons">
+          <button onclick="encriptador()">Encriptar</button>
+          <button onclick="descriptador()">Descriptar</button>
+          <button onclick="apagar()">Apagar / Copia</button>
+        </div>
+      </form>
     </main>
-   
-  
   </body>
   <script src="scripts/encriptador.js">
   </script>

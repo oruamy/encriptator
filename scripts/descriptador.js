@@ -72,6 +72,7 @@ function descriptar(entrada) {
 }
 
 function descriptador() {
-  descriptar(prompt("Entre com o texto para ser descriptogafado: "));
+  let txt = document.querySelector("textarea").value;
+  descriptar(txt);
 }
 

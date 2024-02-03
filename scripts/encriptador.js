@@ -13,7 +13,7 @@ function encriptar(entrada) {
   for (let i in texto){
     palavra = texto[i];
     palavraVerificada = "";
-
+   
     
 
     for (let j in palavra){
@@ -39,9 +39,13 @@ function encriptar(entrada) {
         textoComprimento -= 1;
     }
   }
-  alert(`Texto encriptado: ${textoCodificado}`);
+   alert(`Texto encriptado: ${textoCodificado}`);
 }
 
+
 function encriptador() {
-  encriptar(prompt("Entre com o texto para ser criptogafado: "));
+  let txt = document.querySelector("textarea").value;
+  let txtArea = document.querySelector("textarea");
+  encriptar(txt);
+  //txtArea.document.write(`Texto encriptado: ${textoCodificado}`);
 }
