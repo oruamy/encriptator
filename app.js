@@ -1,4 +1,6 @@
-//let entrada = prompt("Entre com o texto: ");
+  ////////////////////////
+ // Escriptar  ////////// 
+////////////////////////
 
 function encriptar(entrada) {
   let texto = entrada.split(" ");
@@ -11,6 +13,8 @@ function encriptar(entrada) {
   for (let i in texto){
     palavra = texto[i];
     palavraVerificada = "";
+
+    
 
     for (let j in palavra){
       if (palavra[j] == 'e'){
@@ -36,16 +40,11 @@ function encriptar(entrada) {
     }
   }
   console.log(`Texto encriptado: ${textoCodificado}`);
-  // navigator.clipboard.writeText(textoCodificado);
 }
+
   ////////////////////////
  // Descriptar  ///////// 
 ////////////////////////
-
-// const str = 'This is my example string!';
-// const substr = 'my';
-//
-// console.log(str.includes(substr));
 
 function descriptar(entrada) {
   let texto = entrada.split(" ");
@@ -60,7 +59,7 @@ function descriptar(entrada) {
     palavraTamanho = palavra.length;
     let palavraDecodificada = "";
 
-    while(palavraTamanho > 1){
+    while(palavraTamanho > 0){
       if(palavra.startsWith("enter")){
         palavraDecodificada += "e";
         palavra = palavra.slice(5, palavraTamanho);
@@ -92,9 +91,10 @@ function descriptar(entrada) {
           break;
         }
       } else {
-        if (palavraTamanho >= 1 ){
+        if (palavraTamanho >= 1){
           palavraDecodificada += palavra[0];
           palavra = palavra.slice(1, palavraTamanho);
+
           if (palavra.length == 0){
             break;
           }
@@ -111,10 +111,8 @@ function descriptar(entrada) {
         textoDecodificado += " ";
         textoComprimento -= 1;
     }
-    console.log(`palavraDecodificada: ${palavraDecodificada}`);
   }
   console.log(`O texto decodificado é: ${textoDecodificado}`);
 }
-
 encriptar(prompt("Entre com o texto para ser criptogafado: "));
 descriptar(prompt("Entre com o texto para ser descriptogafado: "));
