@@ -39,13 +39,15 @@ function encriptar(entrada) {
         textoComprimento -= 1;
     }
   }
-   alert(`Texto encriptado: ${textoCodificado}`);
+   // alert(`Texto encriptado: ${textoCodificado}`);
+  return (textoCodificado); 
+  //document.getElementById("entrada").value = textoCodificado;
 }
-
 
 function encriptador() {
   let txt = document.querySelector("textarea").value;
   let txtArea = document.querySelector("textarea");
-  encriptar(txt);
-  //txtArea.document.write(`Texto encriptado: ${textoCodificado}`);
+  let texto = encriptar(txt);
+  document.getElementById("entrada").value = texto;
+
 }

@@ -10,11 +10,11 @@
     <main>
       <h1>Encriptador / Descriptador</h1>
       <form>
-        <textarea class="texto" rows="7" cols="150"></textarea>
+        <textarea class="texto" id="entrada" rows="7" cols="150"></textarea>
         <div class="buttons">
-          <button onclick="encriptador()">Encriptar</button>
-          <button onclick="descriptador()">Descriptar</button>
-          <button onclick="apagar()">Apagar / Copia</button>
+          <button type="button" onclick="encriptador()">Encriptar</button>
+          <button type="button" onclick="descriptador()">Descriptar</button>
+          <button type="button" id="clear" onclick="apagar()">Apagar / Copiar</button>
         </div>
       </form>
     </main>
@@ -22,5 +22,7 @@
   <script src="scripts/encriptador.js">
   </script>
   <script src="scripts/descriptador.js">
+  </script>
+  <script src="scripts/apagar.js">
   </script>
 </html>

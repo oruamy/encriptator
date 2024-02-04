@@ -68,11 +68,20 @@ function descriptar(entrada) {
         textoComprimento -= 1;
     }
   }
-  alert(`O texto decodificado é: ${textoDecodificado}`);
+  //alert(`O texto decodificado é: ${textoDecodificado}`);
+  return (textoDecodificado);
 }
 
 function descriptador() {
   let txt = document.querySelector("textarea").value;
-  descriptar(txt);
+  let txtArea = document.querySelector("textarea");
+  let texto = descriptar(txt);
+  document.getElementById("entrada").value = texto;
+
+  
+  // let txt = document.querySelector("textarea").value;
+  // let txtArea = document.querySelector("textarea");
+  // texto = encriptar(txt);
+  // document.getElementById("entrada").value = texto;
 }
 
