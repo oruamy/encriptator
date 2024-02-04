@@ -4,6 +4,8 @@ html, body {
 }
 body {
   background-color: blue;
+  margin: 0;
+  padding:0;
 }
 
 h1 {
@@ -27,7 +29,7 @@ form {
 .texto {
   background-color: grey;
   color: black;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 .buttons {
@@ -37,7 +39,7 @@ form {
 }
 
 button {
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: 10px 3vw 50px 3vw;
-  padding: 10px;
+  padding: 5px;
 }
