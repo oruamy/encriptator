@@ -1,87 +1,20 @@
-  ////////////////////////
- // Descriptar  ///////// 
-////////////////////////
+// Script para descriptar
 
 function descriptar(entrada) {
-  let texto = entrada.split(" ");
-  let textoComprimento = texto.length;
+  let chaves = ["enter", "imes", "ai", "ober","ufat"];
+  let letras = ["e", "i", "a", "o", "u"];
+  let texto = entrada;
 
-  let textoDecodificado = [];
-  let palavra = "";
-  let palavraTamanho = 0;
-
-  for (let i in texto){
-    palavra = texto[i];
-    palavraTamanho = palavra.length;
-    let palavraDecodificada = "";
-
-    while(palavraTamanho > 0){
-      if(palavra.startsWith("enter")){
-        palavraDecodificada += "e";
-        palavra = palavra.slice(5, palavraTamanho);
-        if (palavra.length == 0){
-          break;
-        }
-      } else if (palavra.startsWith("imes")) {
-        palavraDecodificada += "i";
-        palavra = palavra.slice(4, palavraTamanho);
-        if (palavra.length == 0){
-          break;
-        }
-      } else if (palavra.startsWith("ai")) {
-        palavraDecodificada += "a";
-        palavra = palavra.slice(2, palavraTamanho);
-        if (palavra.length == 0){
-          break;
-        }
-      } else if (palavra.startsWith("ober")) {
-        palavraDecodificada += "o";
-        palavra = palavra.slice(4, palavraTamanho);
-        if (palavra.length == 0){
-          break;
-        }
-      } else if (palavra.startsWith("ufat")) {
-        palavraDecodificada += "u";
-        palavra = palavra.slice(4, palavraTamanho);
-        if (palavra.length == 0){
-          break;
-        }
-      } else {
-        if (palavraTamanho >= 1){
-          palavraDecodificada += palavra[0];
-          palavra = palavra.slice(1, palavraTamanho);
-
-          if (palavra.length == 0){
-            break;
-          }
-        } 
-        palavraTamanho = palavra.length;
-        if (palavraTamanho == 0){
-          break;
-        }
-      }
-    } 
-    textoDecodificado += palavraDecodificada;
-
-    if (textoComprimento > 1){
-        textoDecodificado += " ";
-        textoComprimento -= 1;
-    }
+  for (i in chaves){
+    texto = texto.replaceAll(chaves[i], letras[i]);
   }
-  //alert(`O texto decodificado é: ${textoDecodificado}`);
-  return (textoDecodificado);
+  return (texto);
 }
 
 function descriptador() {
   let txt = document.querySelector("textarea").value;
   let txtArea = document.querySelector("textarea");
-  let texto = descriptar(txt);
-  document.getElementById("entrada").value = texto;
-
-  
-  // let txt = document.querySelector("textarea").value;
-  // let txtArea = document.querySelector("textarea");
-  // texto = encriptar(txt);
-  // document.getElementById("entrada").value = texto;
+  let textoDescriptado = descriptar(txt);
+  document.getElementById("entrada").value = textoDescriptado;
 }
 
