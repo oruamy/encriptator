@@ -10,7 +10,9 @@
     <main>
       <h1>Encriptator</h1>
       <form>
-        <textarea class="texto" id="entrada" rows="7" cols="150"></textarea>
+        <!-- <textarea class="texto" id="entrada" rows="7" cols="150"></textarea> -->
+        <textarea class="texto" id="entrada" placeholder="Entre com o texto sem açentuação."
+          ></textarea>
         <div class="buttons">
           <button type="button" onclick="encriptador()">Encriptar</button>
           <button type="button" onclick="descriptador()">Descriptar</button>
@@ -19,10 +21,8 @@
       </form>
     </main>
   </body>
-  <script src="scripts/encriptador.js">
-  </script>
-  <script src="scripts/descriptador.js">
-  </script>
-  <script src="scripts/apagar.js">
-  </script>
+  <script src="scripts/encriptador.js"></script>
+  <script src="scripts/descriptador.js"></script>
+  <script src="scripts/apagar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

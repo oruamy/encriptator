@@ -14,6 +14,21 @@ function encriptar(entrada) {
 function encriptador() {
   let txt = document.querySelector("textarea").value;
   let txtArea = document.querySelector("textarea");
+  let acentos = txt.match(/([^a-z ])/g);
+  console.log(acentos);
+  if (acentos){
+    Swal.fire({
+      icon: "",
+      title: '😥',
+      text: 'Desculpe. O app só aceita caracteres do alfabeto em caixa baixa. ',
+      customClass: {
+      content: 'my-custom-class', // Add your custom class for styling
+      },
+      confirmButtonText: 'OK',
+    });
+     return 0;
+   }
+
   let texto = encriptar(txt);
   document.getElementById("entrada").value = texto;
 }

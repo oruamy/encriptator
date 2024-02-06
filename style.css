@@ -13,7 +13,8 @@ h1 {
   margin-top: 100px;
   padding-top: 30px;
   text-align: center;
-  color: black;
+  /* color: black; */
+  background-color: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
 }
 
 form {
@@ -34,6 +35,16 @@ form {
   height: 400px;
   padding: 10px;
 }
+.texto::placeholder {
+  color: red;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.my-custom-class {
+  font-size: 18px;
+  color: red;
+}
 
 .buttons {
   display: flex;
@@ -48,6 +59,10 @@ button {
   padding: 5px;
   width: 20vw;
   border-radius: 15px;
+}
+
+button:active {
+background-color: green;
 }
 
 @media (max-width: 800px)
