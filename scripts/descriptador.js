@@ -16,12 +16,13 @@ function descriptador() {
   let txtArea = document.querySelector("textarea");
   // if txtArea tiver Caixa alta ou caractere emita um alert box
   //let acentos = txt.match(/([A-Zà-úÀ-Ú])/g);
-  let acentos = txt.match(/([^a-z ])/g);
+  //let acentos = txt.match(/([^a-z ])/g);
+  let acentos = txt.match(/([^a-z \n])/g);
   if (acentos){
     Swal.fire({
       icon: "",
       title: '😥',
-      text: 'Desculpe. O app só aceita caracteres do alfabeto em caixa baixa. ',
+      text: 'Desculpe. O app só aceita caracteres do alfabeto em caixa baixa e sem acentos. ',
       customClass: {
       content: 'my-custom-class', // Add your custom class for styling
       },
