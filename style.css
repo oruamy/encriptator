@@ -33,7 +33,7 @@ form {
   color: black;
   font-size: 2vw;
   border-radius: 15px;
-  height: 400px;
+  /* height: 400px; */
   padding: 10px;
 }
 
@@ -86,7 +86,7 @@ background-color: green;
     padding: 5px;
   }
   textarea {
-    height: 400px;
+    height: 37vh;
   }
   .texto::placeholder {
     font-size: 4vw;
