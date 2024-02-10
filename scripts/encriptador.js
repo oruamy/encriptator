@@ -23,7 +23,6 @@ function encriptador() {
       text: 'Desculpe. O app só aceita caracteres do alfabeto em caixa baixa e sem acentos. ',
       customClass: {
       content: 'my-custom-class', // Add your custom class for styling
-
       },
       confirmButtonText: 'OK',
     });
