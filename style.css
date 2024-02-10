@@ -11,7 +11,7 @@ body {
 
 h1 {
   font-size: 5vw;
-  margin-top: 100px;
+  margin-top: 7vh;
   padding-top: 30px;
   text-align: center;
   /* color: black; */
@@ -33,7 +33,7 @@ form {
   color: black;
   font-size: 2vw;
   border-radius: 15px;
-  /* height: 400px; */
+  height: 35vh; */
   padding: 10px;
 }
 
@@ -57,6 +57,7 @@ button {
   width: 20vw;
   border-radius: 15px;
   border-width: 7px;
+  background-color: white;
 }
 
 button:active {
@@ -82,7 +83,7 @@ background-color: green;
 
   button {
     font-size: 3vw;
-    margin: 10px 3vw 50px 3vw;
+    margin: 0.5vh 3vw 50px 3vw;
     padding: 5px;
   }
   textarea {
