@@ -33,11 +33,12 @@ form {
   color: black;
   font-size: 2vw;
   border-radius: 15px;
-  height: 35vh; */
-  padding: 10px;
+  height: 35vh;
+  padding: 2rem;
 }
 
 .texto::placeholder {
+  padding-top: 2vw;
   color: gold;
   font-size: 2vw;
   text-align: center;
@@ -61,7 +62,7 @@ button {
 }
 
 button:active {
-background-color: green;
+border-color: green;
 }
 
 img {

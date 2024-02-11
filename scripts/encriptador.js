@@ -1,5 +1,4 @@
  // Script para escriptar   
-
 function encriptar(entrada) {
   let letras = ["e", "i", "a", "o", "u"];
   let chaves = ["enter", "imes", "ai", "ober","ufat"];
@@ -13,7 +12,6 @@ function encriptar(entrada) {
 
 function encriptador() {
   let txt = document.querySelector("textarea").value;
-  //txt = txt.replace(/(\n)/gm, " ");
   let txtArea = document.querySelector("textarea");
   let acentos = txt.match(/([^a-z \n])/g);
   if (acentos){
@@ -27,7 +25,8 @@ function encriptador() {
       confirmButtonText: 'OK',
     });
      return 0;
-   }
+  }
+
 
   let texto = encriptar(txt);
   document.getElementById("entrada").value = texto;
