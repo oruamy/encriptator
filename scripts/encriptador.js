@@ -15,6 +15,8 @@ function encriptador() {
   let txtArea = document.querySelector("textarea");
   let acentos = txt.match(/([^a-z \n])/g);
   if (acentos){
+    let audio = new Audio("./assets/error.wav");
+    audio.play();
     Swal.fire({
       icon: "",
       title: '😥',
@@ -27,6 +29,8 @@ function encriptador() {
      return 0;
   }
 
+  let audio = new Audio("./assets/sound.wav");
+  audio.play();
 
   let texto = encriptar(txt);
   document.getElementById("entrada").value = texto;

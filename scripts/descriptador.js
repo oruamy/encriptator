@@ -19,6 +19,9 @@ function descriptador() {
   //let acentos = txt.match(/([^a-z ])/g);
   let acentos = txt.match(/([^a-z \n])/g);
   if (acentos){
+    let audio = new Audio("./assets/error.wav");
+    audio.play();
+
     Swal.fire({
       icon: "",
       title: '😥',
@@ -30,6 +33,10 @@ function descriptador() {
     });
      return 0;
   }
+
+  let audio = new Audio("./assets/descript.wav");
+  audio.play();
+
   let textoDescriptado = descriptar(txt);
   document.getElementById("entrada").value = textoDescriptado;
 }
