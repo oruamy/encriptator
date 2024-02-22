@@ -9,10 +9,34 @@ body {
   padding:0;
 }
 
+aside {
+  position: absolute;
+}
+
+summary {
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.details_content {
+  width: 40vw;
+  margin-left: 1.56rem;
+  font-size:1.5rem;
+  padding:0.5rem;
+  background-color: green;
+  border-radius: 15px;
+}
+
+.heart{
+  color: red;
+  font-size: 2rem;
+}
+
+
 h1 {
   font-size: 5vw;
-  margin-top: 7vh;
-  padding-top: 30px;
+  margin-top: 2vh;
+  padding-top: 1.88rem;
   text-align: center;
   /* color: black; */
   background-color: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
@@ -22,10 +46,10 @@ form {
   /* margin: 30px 350px 0px 350px; */
   margin: 30px 25% 0px 25%;
   width: 50%;
-  display: flex; 
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  
+
 }
 
 .texto {
@@ -82,7 +106,7 @@ img {
   form {
     width: 90%;
     margin: 30px 5% 0px 5%;
-  }  
+  }
 
   .texto {
     font-size: 4vw;
